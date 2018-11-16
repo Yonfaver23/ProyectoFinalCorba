@@ -1,0 +1,16 @@
+module Hospitales {
+    interface Hospital{
+        
+        boolean insertarHospital(in long codigo, in wstring nombre, in wstring direccion, in wstring telefono, in wstring estado);
+        
+        boolean actualizarHospital(in long codigo, in wstring nombre, in wstring direccion, in wstring telefono, in wstring estado);
+                
+        boolean eliminarHospital(in long codigo);
+        
+        wstring consultarHospital(in long codigo);
+       
+        oneway void shutdown();  
+    };
+};
+
+
