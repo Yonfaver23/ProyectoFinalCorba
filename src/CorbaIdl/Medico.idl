@@ -1,0 +1,14 @@
+module Medicos {
+    interface Medico{
+        
+        boolean insertarMedico(in long cedulaMedico,in long codigoHospital, in wstring nombre, in wstring especialidad, in wchar estado);
+        
+        boolean actualizarMedico(in long cedulaMedico,in long codigoHospital, in wstring nombre, in wstring especialidad, in wchar estado);
+                
+        boolean eliminarMedico(in long cedulaMedico);
+        
+        wstring consultarMedico(in long cedulaMedico);
+       
+        oneway void shutdown();  
+    };
+};
