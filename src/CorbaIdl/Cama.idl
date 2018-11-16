@@ -1,0 +1,15 @@
+module Camas {
+    interface Cama{
+        
+        boolean insertarCama(in long codigoCama, in wstring descripcion, in long codigoSala, in wchar estado);
+        
+        boolean actualizarCama(in long codigoCama, in wstring descripcion, in long codigoSala, in wchar estado);
+
+        boolean eliminarCama(in long codigoCama);
+        
+        wstring consultarCama(in long codigoCama);
+       
+        oneway void shutdown();  
+    };
+};
+
