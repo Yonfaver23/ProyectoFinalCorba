@@ -1,0 +1,14 @@
+module Salas {
+    interface Sala{
+        
+        boolean insertarSala(in long codigoSala, in long codigoHospital, in wstring nombre, in wchar estado);
+
+        boolean actualizarSala(in long codigoSala, in long codigoHospital, in wstring nombre, in wchar estado);
+     
+        boolean eliminarSala(in long codigoSala);
+        
+        wstring consultarSala(in long codigoSala);
+       
+        oneway void shutdown();  
+    };
+};
