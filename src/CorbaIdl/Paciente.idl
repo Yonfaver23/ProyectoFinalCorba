@@ -1,0 +1,15 @@
+module Pacientes {
+    interface Paciente{
+        
+        boolean insertarPaciente(in long cedulaPaciente,in long codigoCama, in wstring nombre, in wstring direccion, in wchar estado);
+        
+        boolean actualizarPaciente(in long cedulaPaciente,in long codigoCama, in wstring nombre, in wstring direccion, in wchar estado);
+  
+        boolean eliminarPaciente(in long cedulaPaciente);
+        
+        wstring consultarPaciente(in long cedulaPaciente);
+       
+        oneway void shutdown();  
+    };
+};
+
